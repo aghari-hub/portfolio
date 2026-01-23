@@ -850,93 +850,80 @@
     </section>
 
     <section id="projects">
-      <div class="section-header">
-        <p class="section-eyebrow">Projects</p>
-        <h2 class="section-title">Hands-on cloud work</h2>
-        <p class="section-subtitle">
-          A few highlights of what I’ve built while learning AWS and DevOps
-          concepts.
-        </p>
+  <div class="section-header">
+    <p class="section-eyebrow">Projects</p>
+    <h2 class="section-title">Hands-on DevOps & Cloud Projects</h2>
+    <p class="section-subtitle">
+      Real-world projects demonstrating AWS infrastructure, automation,
+      CI/CD pipelines, and containerized deployments.
+    </p>
+  </div>
+
+  <div class="card-grid">
+
+    <article class="card">
+      <h3 class="card-title">CI/CD Pipeline for Java Web Application</h3>
+      <p class="card-meta">Jenkins • GitHub • Maven • SonarQube • Docker • Tomcat</p>
+      <p class="card-body">
+        Designed and implemented a Jenkins Declarative CI/CD pipeline to automate
+        build, testing, code quality analysis, containerization, and deployment
+        of a Java Maven application to Apache Tomcat.
+      </p>
+      <div class="tag-row">
+        <span class="tag">CI/CD Automation</span>
+        <span class="tag">Code Quality</span>
+        <span class="tag">Dockerized Deployment</span>
       </div>
+    </article>
 
-      <div class="card-grid">
-        <article class="card">
-          <h3 class="card-title">Static Website Hosting with S3 &amp; CloudFront</h3>
-          <p class="card-meta">S3 • CloudFront • Route 53 (optional)</p>
-          <p class="card-body">
-            Hosted a static website on Amazon S3 with proper bucket policies and
-            configured CloudFront as a CDN to improve global performance.
-            Implemented caching and basic security best practices.
-          </p>
-          <div class="tag-row">
-            <span class="tag">S3 Static Hosting</span>
-            <span class="tag">CloudFront CDN</span>
-            <span class="tag">Security Policies</span>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3 class="card-title">EC2 Server Hosting in a Custom VPC</h3>
-          <p class="card-meta">EC2 • VPC • Subnets • ELB</p>
-          <p class="card-body">
-            Designed a VPC with public and private subnets, deployed EC2
-            instances for a web application and placed an Elastic Load Balancer
-            in front for high availability. Configured security groups and route
-            tables to control access.
-          </p>
-          <div class="tag-row">
-            <span class="tag">Custom VPC</span>
-            <span class="tag">Public / Private Subnets</span>
-            <span class="tag">Elastic Load Balancer</span>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3 class="card-title">Serverless Web Application Backend</h3>
-          <p class="card-meta">Lambda • API Gateway • DynamoDB</p>
-          <p class="card-body">
-            Built a serverless backend using AWS Lambda and API Gateway, storing
-            data in DynamoDB. This reduced operational overhead and provided
-            automatic scaling with pay-per-use pricing.
-          </p>
-          <div class="tag-row">
-            <span class="tag">Serverless</span>
-            <span class="tag">Event-Driven</span>
-            <span class="tag">NoSQL</span>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3 class="card-title">Real-Time Monitoring &amp; Cost Tracking</h3>
-          <p class="card-meta">CloudWatch • SNS • Billing</p>
-          <p class="card-body">
-            Configured CloudWatch metrics and alarms for EC2 and other services,
-            with SNS notifications for important events. Set up basic AWS cost
-            monitoring to avoid unexpected usage spikes.
-          </p>
-          <div class="tag-row">
-            <span class="tag">CloudWatch Alarms</span>
-            <span class="tag">SNS Alerts</span>
-            <span class="tag">Cost Optimization</span>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3 class="card-title">Infrastructure as Code with CloudFormation</h3>
-          <p class="card-meta">CloudFormation • IAM • EC2 • S3</p>
-          <p class="card-body">
-            Wrote CloudFormation templates to automate provisioning of VPCs,
-            EC2 instances, IAM roles and S3 buckets. This helped ensure
-            repeatable environments and easier experimentation.
-          </p>
-          <div class="tag-row">
-            <span class="tag">IaC</span>
-            <span class="tag">Reusable Templates</span>
-            <span class="tag">Version Control</span>
-          </div>
-        </article>
+    <article class="card">
+      <h3 class="card-title">AWS Infrastructure Automation & Monitoring</h3>
+      <p class="card-meta">EC2 • VPC • IAM • CloudWatch • CloudFormation</p>
+      <p class="card-body">
+        Provisioned AWS infrastructure using CloudFormation templates, including
+        custom VPC, subnets, security groups, and EC2 instances. Configured
+        CloudWatch metrics and alarms for monitoring and alerting.
+      </p>
+      <div class="tag-row">
+        <span class="tag">Infrastructure as Code</span>
+        <span class="tag">AWS Networking</span>
+        <span class="tag">Monitoring & Alerts</span>
       </div>
-    </section>
+    </article>
+
+    <article class="card">
+      <h3 class="card-title">Static Website Hosting with S3 & CloudFront</h3>
+      <p class="card-meta">S3 • CloudFront • IAM • CDN</p>
+      <p class="card-body">
+        Hosted a highly available static website using Amazon S3 and optimized
+        global content delivery with CloudFront. Implemented secure bucket
+        policies and caching strategies for performance.
+      </p>
+      <div class="tag-row">
+        <span class="tag">Static Hosting</span>
+        <span class="tag">CDN Optimization</span>
+        <span class="tag">AWS Security</span>
+      </div>
+    </article>
+
+    <article class="card">
+      <h3 class="card-title">Dockerized Apache Tomcat Application</h3>
+      <p class="card-meta">Docker • Apache Tomcat • Amazon Linux</p>
+      <p class="card-body">
+        Built a custom Docker image for Apache Tomcat using Amazon Linux,
+        automated application setup with Dockerfile, and exposed required ports
+        for containerized deployment.
+      </p>
+      <div class="tag-row">
+        <span class="tag">Containers</span>
+        <span class="tag">Dockerfile</span>
+        <span class="tag">Portable Deployment</span>
+      </div>
+    </article>
+
+  </div>
+</section>
+
 
     <section id="education">
       <div class="section-header">
@@ -995,10 +982,6 @@
 
       <div class="two-col">
         <div class="card">
-          <div class="cert-item">
-            <strong>AWS Solution Architecture — Aviz Academy</strong>
-            <span>Apr 2025 – Jun 2025</span>
-          </div>
           <div class="cert-item">
             <strong>AWS Cloud Foundation Training — SRTechOps</strong>
             <span>Completed Jun 2025</span>
